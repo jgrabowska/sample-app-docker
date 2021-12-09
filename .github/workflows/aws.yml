@@ -31,7 +31,7 @@ jobs:
       env:
         ECR_REGISTRY: 570963990784.dkr.ecr.eu-central-1.amazonaws.com
         ECR_REPOSITORY: cd2021
-        IMAGE_TAG: 1.1
+        IMAGE_TAG: 1.2
       run: |
         # Build a docker container and push it to ECR 
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
